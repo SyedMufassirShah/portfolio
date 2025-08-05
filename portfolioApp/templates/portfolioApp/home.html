@@ -1,0 +1,252 @@
+{% extends 'portfolioApp/base.html' %} {% load static %} {% block title %}Home | My Portfolio{% endblock %} {% block content %}
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Text Column -->
+            <div class="col-md-6 order-2 order-md-1">
+                <h1 class="display-4 fw-bold mb-3">
+                    Hi, I’m <span style="color: #4f7ac4"> Mufassir Shah</span>
+                </h1>
+                <p class="lead">
+                    A passionate
+                    <strong>Junior Django Backend Developer</strong> specializing in building secure, scalable web applications with
+                    <strong>Django, Python, and MySQL</strong>. I help startups and businesses turn ideas into robust digital products — from custom web apps to AI-powered platforms.
+                </p>
+                <p class="lead">
+                    With real-world experience working on production-grade startup projects,I’m ready to tackle new challenges and create meaningful tech solutions.
+                </p>
+                <div class="d-flex flex-wrap gap-2">
+                    <a href="https://www.linkedin.com/in/mufassir-shah-a39ab1250/" class="btn btn-primary btn-lg" style="background-color: #4f7ac4; border: 1px solid #4f7ac4">Let’s Connect</a
+          >
+          <a
+            href="https://github.com/SyedMufassirShah"
+            class="btn btn-outline-secondary btn-lg"
+            style="
+              color: #4f7ac4;
+              border: 1px solid #4f7ac4;
+              background-color: #fff;
+            "
+            >View My GitHub</a
+          >
+          <a
+            href="../../static/Mufassir_Shah's_CV.pdf"
+            class="btn btn-outline-secondary btn-lg"
+            style="
+              color: #4f7ac4;
+              border: 1px solid #4f7ac4;
+              background-color: #fff;
+            "
+            >Curriculum Vitae <i class="bi bi-download"></i></a
+          >
+        </div>
+      </div>
+
+      <!-- Image Column -->
+      <div class="col-md-6 text-center order-1 order-md-2 mb-4 mb-md-0">
+        <img
+          src="{% static 'img/hero-image.png' %}"
+          class="img-fluid rounded hero-img"
+          alt="Syed Mufassir Shah"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+<hr />
+<section class="py-5 my-5" style="background-color: #7eabf7">
+<!-- <section class="py-5 my-5 bg-light" > -->
+  <div class="container py-5 px-5">
+    <h2 class="text-center mb-1" style="color: #fff">My Tech Stack</h2>
+    <p class="text-center mb-5" style="color: #fff; font-weight: 400">
+      “My go-to tools for building modern, high-quality web solutions.”
+    </p>
+    <div class="row g-4 justify-content-center">
+      <!-- Tech Card -->
+      <div class="col-md-4 col-lg-3">
+        <div class="card h-100 text-center p-3">
+          <img
+            src="{% static 'img/Python.png' %}"
+            class="mx-auto mb-3"
+            alt="Python"
+            style="width: 60px"
+          /><hr>
+          <h5 class="card-title" style="color: #4f7ac4">Python</h5>
+          <p class="card-text" style="color: #4f7ac4">
+            A versatile programming language for building robust applications.
+          </p>
+        </div>
+      </div>
+      <!-- Repeat for each tech -->
+      <div class="col-md-4 col-lg-3">
+        <div class="card h-100 text-center p-3">
+          <img
+            src="{% static 'img/Django(3).png' %}"
+            class="mx-auto mb-3"
+            alt="Python"
+            style="width: 60px"
+          /><hr>
+          <h5 class="card-title" style="color: #4f7ac4">Django</h5>
+          <p class="card-text" style="color: #4f7ac4">
+            A high-level Python web framework for rapid, secure development.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3">
+        <div class="card h-100 text-center p-3">
+          <img
+            src="{% static 'img/React.png' %}"
+            class="mx-auto mb-3"
+            alt="Python"
+            style="width: 60px"
+          /><hr>
+          <h5 class="card-title" style="color: #4f7ac4">React</h5>
+          <p class="card-text" style="color: #4f7ac4">
+            A JavaScript library for building dynamic user interfaces.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3">
+        <div class="card h-100 text-center p-3">
+          <img
+            src="{% static 'img/MySQL(2).png' %}"
+            class="mx-auto mb-3"
+            alt="Python"
+            style="width: 60px"
+          /><hr>
+          <h5 class="card-title" style="color: #4f7ac4">MySQL</h5>
+          <p class="card-text" style="color: #4f7ac4">
+            A popular relational database for managing structured data.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3">
+        <div class="card h-100 text-center p-3">
+          <img
+            src="{% static 'img/JS.png' %}"
+            class="mx-auto mb-3"
+            alt="Python"
+            style="width: 60px"
+          /><hr>
+          <h5 class="card-title" style="color: #4f7ac4">JavaScript</h5>
+          <p class="card-text" style="color: #4f7ac4">
+            The core language for interactive web development.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3">
+        <div class="card h-100 text-center p-3">
+          <img
+            src="{% static 'img/CSS.png' %}"
+            class="mx-auto mb-3"
+            alt="Python"
+            style="width: 60px"
+          /><hr>
+          <h5 class="card-title" style="color: #4f7ac4">CSS</h5>
+          <p class="card-text" style="color: #4f7ac4">
+            Stylesheets for designing responsive and attractive websites.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3">
+        <div class="card h-100 text-center p-3">
+          <img
+            src="{% static 'img/GIT.png' %}"
+            class="mx-auto mb-3"
+            alt="Python"
+            style="width: 60px"
+          /><hr>
+          <h5 class="card-title" style="color: #4f7ac4">GitHub</h5>
+          <p class="card-text" style="color: #4f7ac4">
+            A version control system for tracking and collaborating on code.
+          </p>
+        </div>
+      </div>
+      <!-- Add more cards as needed -->
+    </div>
+  </div>
+</section>
+<hr />
+<section class="py-5 px-5 my-5 bg-light">
+    <div class="container text-center px-5">
+        <h2 class="mb-4 text-dark">What People Say</h2>
+        {% if testimonials %}
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                {% for testimonial in testimonials %}
+                <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                    <blockquote class="blockquote">
+                        {% if testimonial.image %}
+                        <img src="{{ testimonial.image.url }}" alt="{{ testimonial.name }}" class="rounded-circle mt-3" style="width: 80px; height: 80px; object-fit: cover;"> {% endif %}
+                        <footer class="blockquote-footer">{{ testimonial.name }} {% if testimonial.designation %} — {{ testimonial.designation }}{% endif %}
+                        </footer>
+                        <p class="mb-4">"{{ testimonial.quote }}"</p>
+                    </blockquote>
+                </div>
+                {% endfor %}
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+        </div>
+        {% else %}
+        <p class="text-muted">No testimonials available yet.</p>
+        {% endif %}
+    </div>
+</section>
+<hr />
+<section class="py-5 my-5" style="background-color: #7eabf7">
+<!-- <section class="py-5 my-5 bg-light"> -->
+  <div class="container">
+    <h2 class="text-center fw-bold text-light">Featured Projects</h2>
+    <p class="text-center mb-5 text-light">
+      “Explore my featured projects — carefully crafted to showcase my skills, creativity, and passion for building meaningful digital solutions.”
+    </p>
+    <div class="row g-4 justify-content-center">
+      {% for project in featured_projects %}
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100 rounded-4 project-card border-0 text-dark">
+          {% if project.image %}
+          <img
+            src="{{ project.image.url }}"
+            class="card-img-top rounded-top-4 featured-card-img"
+            alt="{{ project.title }}"
+          />
+          {% endif %}
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title fw-semibold">{{ project.title }}</h5>
+            <p class="card-text mb-4">{{ project.description|truncatewords:20 }}</p>
+            <a
+              href="{% url 'project-detail' project.pk %}"
+              class="btn btn-light btn-sm mt-auto fw-semibold"
+              style="background-color: #4f7ac4; color: #fff;"
+            >
+              View Details
+            </a>
+                </div>
+            </div>
+        </div>
+        {% empty %}
+        <div class="col-12 text-center">
+            <p class="text-muted">No featured projects at the moment.</p>
+        </div>
+        {% endfor %}
+    </div>
+    </div>
+</section>
+<hr />
+<section class="py-5 my-5 text-center text-white" style="
+    background: url('{% static 'img/banner_bg.png' %}') no-repeat center center;
+    background-size: cover;
+  ">
+    <div class="container">
+        <h2 class="mb-4">Ready to Work together?</h2>
+        <a href="{% url 'contact' %}" class="btn btn-light btn-lg">Contact Me</a>
+    </div>
+</section>
+{% endblock %}

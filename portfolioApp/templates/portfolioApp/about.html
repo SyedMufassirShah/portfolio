@@ -1,0 +1,112 @@
+{% extends 'portfolioApp/base.html' %} {% load static %} {% block title %}About
+| My Portfolio{% endblock %} {% block content %}
+<section
+  class="py-5 my-5"
+  style="
+    background: url('{% static 'img/about_bg2.png' %}') no-repeat center center;
+    background-size: cover;
+  "
+>
+  <div class="container text-center text-light" style="padding: 50px; border-radius: 12px;">
+    <img
+      src="{% static 'img/hero4.jpeg' %}"
+      alt="Mufassir Shah"
+      class="rounded-circle mb-4"
+      style="width: 200px; height: 200px; object-fit: cover; border: 4px solid #fff;"
+    />
+    <h1 class="fw-bold mb-2 text-dark">Syed Mufassir Shah</h1>
+    <p class="lead mb-0 text-muted">
+      Junior Django Backend Developer | Turning ideas into secure, production-grade web apps.
+    </p>
+  </div>
+</section>
+<hr />
+<section class="py-5 my-5" style="background-color: #7eabf7">
+  <div class="container">
+    <h2 class="fw-bold mb-3 text-center text-light">About Me</h2>
+    <p class="text-light text-center px-5" style="text-align: justify">
+      Hello! I’m Syed Mufassir Shah — a passionate Junior Django Backend
+      Developer dedicated to building secure, scalable, and impactful web
+      applications. I enjoy transforming complex ideas into robust backend
+      solutions that solve real-world problems for startups and growing
+      businesses. My expertise lies in Python, Django, and MySQL, with hands-on
+      experience working on production-ready projects, automation scripts, and
+      AI-integrated platforms. I believe that great code is clean, efficient,
+      and maintainable. Beyond coding, I constantly invest in my skills through
+      certifications, open-source contributions, and real project work that
+      pushes my learning forward. When I’m not developing, I’m probably
+      exploring new tech trends, refining my problem-solving skills, or
+      connecting with like-minded developers to collaborate and grow together.
+      I’m always open to exciting opportunities where I can contribute, learn,
+      and make a difference through technology. If you’d like to build something
+      impactful together — let’s connect!
+    </p>
+  </div>
+</section>
+<hr />
+<section class="py-5 my-5 bg-light">
+  <div class="container">
+    <h2 class="fw-bold mb-3 text-center" style="color: #4f7ac4">
+      Certifications
+    </h2>
+    <p class="text-center text-muted mb-5">
+      A showcase of my verified credentials & continuous learning.
+    </p>
+
+    <div class="row g-4 justify-content-center">
+      {% for cert in certifications %}
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100 shadow-sm border-0 rounded-4 text-center p-4">
+          {% if cert.logo %}
+          <img
+            src="{{ cert.logo.url }}"
+            alt="{{ cert.title }}"
+            class="mb-3 mx-auto d-block"
+            style="width: 100%; height: auto; object-fit: contain"
+          />
+          {% endif %}
+
+          <div class="card-body d-flex flex-column p-0">
+            <h6 class="fw-bold mb-2" style="color: #4f7ac4">
+              {{ cert.title }}
+            </h6>
+            <p class="text-muted small mb-3">{{ cert.provider }}</p>
+            {% if cert.issued_date %}
+            <p class="text-muted small mb-3">
+              <i class="bi bi-calendar-check"></i> {{ cert.issued_date }}
+            </p>
+            {% endif %} {% if cert.link %}
+            <a
+              href="{{ cert.link }}"
+              target="_blank"
+              class="btn btn-sm fw-semibold mt-auto"
+              style="background-color: #4f7ac4; color: #fff"
+            >
+              View Certificate
+            </a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      {% empty %}
+      <p class="text-center text-muted">No certifications added yet.</p>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<hr />
+<section
+  class="py-5 my-5 text-center text-white"
+  style="
+    background: url('{% static 'img/banner_bg.png' %}') no-repeat center center;
+    background-size: cover;
+  "
+>
+  <div class="container">
+    <h2 class="mb-4">Ready to Work together?</h2>
+    <a href="{% url 'contact' %}" class="btn btn-light btn-lg">Contact Me</a>
+  </div>
+</section>
+<hr />
+{% endblock %}

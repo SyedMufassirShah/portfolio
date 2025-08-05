@@ -1,0 +1,175 @@
+/* === General === */
+
+body {
+    background-color: #ffffff;
+    color: #212529;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 600;
+}
+
+
+/* === Hero Section === */
+
+.hero {
+    background-color: #f8f9fa;
+    /* light gray */
+    padding: 80px 0;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #4f7ac4;
+}
+
+.hero p {
+    font-size: 1.125rem;
+    color: #555;
+    text-align: justify;
+}
+
+.hero #connect-btn {
+    background-color: #4f7ac4;
+    border-color: #4f7ac4;
+}
+
+.hero .btn-outline-secondary {
+    border-color: #4f7ac4;
+    background-color: #fff;
+    color: #4f7ac4;
+}
+
+.hero .btn-outline-secondary:hover {
+    background-color: #4f7ac4;
+    color: #fff;
+}
+
+.hero-img {
+    max-height: 500px;
+    /* Or whatever looks good */
+    width: auto;
+    /* Keep natural width */
+}
+
+
+/* === Navbar === */
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #4f7ac4;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: #fff;
+}
+
+
+/* === Project Cards === */
+
+.card {
+    border: none;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* === Contact Form === */
+
+form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+form label {
+    font-weight: 500;
+}
+
+form .btn {
+    min-width: 150px;
+}
+
+
+/* === Footer === */
+
+footer {
+    margin-top: 80px;
+    padding: 40px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+    color: #6c757d;
+}
+
+
+/* === Utility === */
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.project-card {
+    background-color: #f4f5f7;
+    color: #fff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid #dee2e6;
+    /* optional */
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+    object-fit: cover;
+    height: 180px;
+}
+
+.featured-card-img {
+    height: 100px;
+    /* or whatever looks good */
+    object-fit: cover;
+    border-top-left-radius: 0.5rem;
+    /* matches rounded-4 */
+    border-top-right-radius: 0.5rem;
+    width: 100%;
+}
+
+
+/* Make all carousel images the same height & crop nicely */
+
+.carousel-inner img {
+    height: 400px;
+    /* or whatever height works for your layout */
+    object-fit: cover;
+    /* crops excess, fills the container */
+    width: 100%;
+    border-radius: 8px;
+    /* optional rounded corners */
+}

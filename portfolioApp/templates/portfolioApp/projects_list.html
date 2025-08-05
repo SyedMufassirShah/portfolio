@@ -1,0 +1,27 @@
+{% extends 'portfolioApp/base.html' %} {% block title %}Projects | My Portfolio{% endblock %} {% block content %}
+<section class="py-5 my-5" style="background-color: #7eabf7">
+    <div class="container">
+        <h1 class="text-center fw-bold text-light ">My Projects</h1>
+        <p class="text-center mb-5 text-light">“Take a look at some of my work — each project reflects my skills and passion for development.”</p>
+        <div class="row g-4 justify-content-center ">
+            {% for project in projects %}
+            <div class="col-sm-6 col-md-4 col-lg-3 ">
+                <div class="card h-100 rounded-4 project-card border-0 text-dark ">
+                    {% if project.image %}
+                    <img src="{{ project.image.url }} " class="card-img-top rounded-top-4 " alt="{{ project.title }} "> {% endif %}
+                    <div class="card-body d-flex flex-column ">
+                        <h5 class="card-title fw-semibold ">{{ project.title }}</h5>
+                        <p class="card-text mb-4 ">{{ project.description|truncatewords:20 }}</p>
+                        <a href="{% url 'project-detail' project.pk %} " class="btn btn-light btn-sm mt-auto fw-semibold " style="background-color: #4f7ac4; color: #fff; ">View Details</a>
+                    </div>
+                </div>
+            </div>
+            {% empty %}
+            <div class="col-12 text-center ">
+                <p class="text-muted ">No projects found.</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<hr> {% endblock %}
